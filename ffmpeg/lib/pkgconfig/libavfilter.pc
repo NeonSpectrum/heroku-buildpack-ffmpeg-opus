@@ -1,0 +1,14 @@
+prefix=/root/ffmpeg_build
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 6.88.100
+Requires: libswscale >= 4.7.101, libswresample >= 2.8.100, libavformat >= 57.72.101, libavcodec >= 57.93.100, libavutil >= 55.61.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -lXv -lX11 -lXext -Wl,--no-undefined -lSDL2 -lasound -lm -ldl -lpulse-simple -lpulse -lX11 -lXext -lXcursor -lXinerama -lXi -lXrandr -lXss -lXxf86vm -lwayland-egl -lwayland-client -lwayland-cursor -lxkbcommon -lts -lpthread -lrt -ldl -ldl -Wl,--no-undefined -lSDL2 -lasound -lm -ldl -lpulse-simple -lpulse -lX11 -lXext -lXcursor -lXinerama -lXi -lXrandr -lXss -lXxf86vm -lwayland-egl -lwayland-client -lwayland-cursor -lxkbcommon -lts -lpthread -lrt -lvdpau -lX11 -lva -lva-x11 -lX11 -lva -lva-drm -lva -lxcb -lXau -lXdmcp -lxcb-shm -lxcb -lXau -lXdmcp -lxcb-xfixes -lxcb-render -lxcb-shape -lxcb -lXau -lXdmcp -lxcb-shape -lxcb -lXau -lXdmcp -lasound -Wl,--no-undefined -lSDL2 -lasound -lm -ldl -lpulse-simple -lpulse -lX11 -lXext -lXcursor -lXinerama -lXi -lXrandr -lXss -lXxf86vm -lwayland-egl -lwayland-client -lwayland-cursor -lxkbcommon -lts -lpthread -lrt -lmp3lame -lm -lz -pthread -pthread
+Libs.private: 
+Cflags: -I${includedir}
