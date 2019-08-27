@@ -13,7 +13,7 @@ cd $VENDOR_DIR
 cp -r $FFMPEG_DIR .
 
 DOWNLOAD_URL="https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz"
-curl -L --silent $DOWNLOAD_URL | tar xJ --strip-components=1 -C "$HOME/vendor/ffmpeg/bin"
+curl -L --silent $DOWNLOAD_URL | tar xJ --strip-components=1 -C "bin/"
 echo "Downloading and extracting ffmpeg"
 
 echo "exporting PATH and LIBRARY_PATH"
